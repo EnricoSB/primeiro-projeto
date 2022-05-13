@@ -1,5 +1,5 @@
 import pymysql
-conexao = pymysql.connect(host='localhost' ,database='bancoteste',user='root', password='1234', port=3306)
+conexao = pymysql.connect(host='localhost' ,database='**********',user='****', password='****', port=****)
 from pydantic import BaseModel
 class Item(BaseModel):
      id:int
@@ -80,48 +80,3 @@ class Insert:
           cursor.close()
           return 'O usuario foi adicionado com sucesso'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
-#      def deletar(self,id):
-#           cursor = conexao.cursor()
-#           query = f'delete from minhaprimeiraapi where id={id}'
-#           cursor.execute(query)
-#           conexao.commit()
-#           cursor.close()
-#           return "deu certo irmão"
-#
-#
-# #adicionar
-# def adicionar_usuario(usuario:Item):
-#      cursor=conexao.cursor()
-#      query = f'insert into minhaprimeiraapi(id,nome,idade) values({usuario.id},"{usuario.nome}",{usuario.idade})'
-#      cursor.execute(query)
-#      conexao.commit()
-#      cursor.close()
-#      return "Dados inseridos com sucesso"
-
-
-
-
-
-
-
-#excluir
-#atualizar
-#solid
